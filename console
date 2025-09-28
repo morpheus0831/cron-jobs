@@ -1,0 +1,20 @@
+<?php
+
+declare(strict_types=1);
+
+use CronMh\Commands\GetUsersCommand;
+use Symfony\Component\Console\Application;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$commands = [
+    GetUsersCommand::class,
+];
+
+$app = new Application();
+
+foreach ($commands as $command) {
+    $app->add(new $command());
+}
+
+$app->run();
