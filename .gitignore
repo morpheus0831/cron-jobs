@@ -2,3 +2,4 @@ vendor/
 .vscode/
 .env
 .env.local
+.phpunit.result.cache
