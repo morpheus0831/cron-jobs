@@ -9,5 +9,9 @@ return [
         'user' => $_ENV['DBUSER'],
         'pass' => $_ENV['DBPASS'],
         'dsn' => $_ENV['DBDSN'],
-    ]
+    ],
+    'mailer' => [
+        'dsn' => $_ENV['MAILER_DSN'],
+        'from' => $_ENV['MAIL_FROM'],
+    ],
 ];

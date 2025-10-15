@@ -3,12 +3,14 @@
 declare(strict_types=1);
 
 use CronMh\Commands\GetUsersCommand;
+use CronMh\Commands\SendEmailCommand;
 use Symfony\Component\Console\Application;
 
 require_once __DIR__ . '/vendor/autoload.php';
 
 $commands = [
     GetUsersCommand::class,
+    SendEmailCommand::class,
 ];
 
 $app = new Application();
