@@ -10,7 +10,7 @@ class Config
 {
     private static $config = [];
 
-    public static function load(string $filepath)
+    public static function load(string $filepath = __DIR__ . "/../Config/appConfig.php")
     {
         if (file_exists($filepath)) {
             self::$config = require $filepath;

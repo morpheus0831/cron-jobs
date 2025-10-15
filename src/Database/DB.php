@@ -14,7 +14,7 @@ class DB
     public static function connect()
     {
         try {
-            Config::load(__DIR__ . "/../Config/appConfig.php");
+            Config::load();
         } catch (Exception $e) {
             echo $e->getMessage();
             exit;
